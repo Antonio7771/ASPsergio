@@ -1,0 +1,29 @@
+﻿@model producto,provedores,Registros
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <h1>dato de producto</h1>
+    <b>ID de producto: </b>@Model.ID
+    <b>Nombre de producto: </b>@Model.nombre
+    <b>Presio de producto; </b>@Model.presio
+    <b>cantidad de producto: </b>@Model.cantidad
+    
+    <h1>datos de provedor</h1>
+    <b>ID de provedor: </b>@Model.Id_provedor
+    <b>Nombre de provedor: </b>@Model.nombre_provedor
+    <b>producto del provedor: </b>@Model.producto_provedor
+    
+    <h1>datos de registros</h1>
+    <b>Nombre de usuario: </b>@Model.nombre_registro
+    <b>Edad: </b>@Model.edad_registro
+    <b>Fecha De Registro: </b>@Model.fecha_registro
+  
+
+    
+    
+</div>
